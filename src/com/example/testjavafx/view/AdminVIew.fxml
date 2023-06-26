@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox fx:id="pane" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" styleClass="parent" stylesheets="@style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.testjavafx.controller.AdminViewController">
+   <children>
+      <Text fx:id="greeting" fill="SILVER" strokeType="OUTSIDE" strokeWidth="0.0" text="Hi there!">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Text>
+      <GridPane alignment="CENTER" prefHeight="121.0" prefWidth="900.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="494.0" minWidth="10.0" prefWidth="441.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="464.0" minWidth="10.0" prefWidth="459.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="btnStockAvailability" mnemonicParsing="false" onAction="#btnStockAvailability_onClick" prefHeight="40.0" prefWidth="198.0" styleClass="button" stylesheets="@style.css" text="Stock Availability" textFill="SILVER" />
+            <Button fx:id="btnUpdateStock" mnemonicParsing="false" onAction="#btnUpdateStock_onClick" prefHeight="38.0" prefWidth="198.0" styleClass="button" stylesheets="@style.css" text="Update Stock Availability" textFill="SILVER" GridPane.rowIndex="1" />
+            <Button fx:id="btnCouponCount" mnemonicParsing="false" onAction="#btnCouponCount_onClick" prefHeight="40.0" prefWidth="198.0" styleClass="button" stylesheets="@style.css" text="Tocken Count" textFill="SILVER" GridPane.columnIndex="1" />
+            <Button fx:id="btnSetCouponCount" mnemonicParsing="false" onAction="#btnSetCouponCount_onClick" prefHeight="40.0" prefWidth="198.0" styleClass="button" stylesheets="@style.css" text="Set Tocken Count" textFill="SILVER" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+         <VBox.margin>
+            <Insets top="50.0" />
+         </VBox.margin>
+      </GridPane>
+      <Button fx:id="btnBack" mnemonicParsing="false" onAction="#btnBack_onClick" prefHeight="32.0" prefWidth="140.0" styleClass="button" stylesheets="@style.css" text="Logout" textFill="SILVER" />
+   </children>
+</VBox>

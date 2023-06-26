@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox fx:id="pane" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="parent" stylesheets="@style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.testjavafx.controller.StockViewController">
+   <children>
+      <Text fill="SILVER" strokeType="OUTSIDE" strokeWidth="0.0" text="Stock Availability">
+         <font>
+            <Font size="59.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="50.0" />
+         </VBox.margin></Text>
+      <TableView fx:id="table" prefHeight="93.0" prefWidth="478.0" styleClass="button" stylesheets="@style.css">
+        <columns>
+          <TableColumn prefWidth="499.0" styleClass="table-view" text="Stock" />
+        </columns>
+         <VBox.margin>
+            <Insets left="50.0" right="50.0" />
+         </VBox.margin>
+      </TableView>
+      <Button fx:id="btnBack" mnemonicParsing="false" onAction="#btnBack_onClick" styleClass="button" stylesheets="@style.css" text="Back" textFill="SILVER">
+         <VBox.margin>
+            <Insets top="18.0" />
+         </VBox.margin></Button>
+   </children>
+</VBox>

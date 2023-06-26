@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox fx:id="pane" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" styleClass="parent" stylesheets="@style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.testjavafx.controller.SelectOptionViewController">
+   <children>
+      <Text fill="SILVER" strokeType="OUTSIDE" strokeWidth="0.0" text="Who Are You?" textOrigin="BOTTOM">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="80.0" />
+         </VBox.margin>
+      </Text>
+      <Button fx:id="btnAdmin" mnemonicParsing="false" onAction="#btnAdmin_onClick" prefHeight="46.0" prefWidth="181.0" styleClass="button" stylesheets="@style.css" text="Admin" textFill="SILVER">
+         <VBox.margin>
+            <Insets bottom="50.0" />
+         </VBox.margin>
+      </Button>
+      <Button fx:id="btnUser" mnemonicParsing="false" onAction="#btnUser_onClick" prefHeight="46.0" prefWidth="183.0" styleClass="button" stylesheets="@style.css" text="User" textFill="SILVER" />
+   </children>
+</VBox>
